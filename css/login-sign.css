@@ -8,6 +8,7 @@ body {
   height: 100%;
   width: 100%;
   overflow: hidden;
+  cursor: url("../img//cursor-red.png") 16 16, auto;
   /* background-color: black */
 }
 
@@ -149,7 +150,25 @@ body {
   padding: 0 10px;
   transition: all 5s;
 
+}
+.snowflake{
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+  position: absolute;
+  opacity: 0.7;
+  background-image: url('../img/xiaoyinghua.png');
+  background-size: 100% 100%;
 
+
+}
+
+.ready{
+  cursor: url("../img//cursor-zi.png") 16 16, auto !important;
+}
+
+.login_panel input:hover {
+  cursor: url("../img//cursor.png") 16 16, auto;
 }
 
 .login_panel input:focus {
@@ -157,11 +176,14 @@ body {
   background-color: blueviolet;
   color: whitesmoke;
   opacity: 0.8;
+  cursor: url("../img//cursor-red.png") 16 16, auto;
+
 }
 
-::-webkit-input-placeholder{/*Webkit browsers*/
-  color:white;
-  font-size:16px;
+::-webkit-input-placeholder {
+  /*Webkit browsers*/
+  color: white;
+  font-size: 16px;
   line-height: 30px;
 }
 
@@ -175,7 +197,6 @@ body {
   font-size: 15px;
   line-height: 15px;
   margin-top: 10px;
-  cursor: pointer;
   transition: all 1.5s;
 
 
@@ -188,5 +209,7 @@ body {
   font-size: 15px;
   color: blueviolet;
   box-shadow: 5px 2px 10px 2px blueviolet;
+  cursor: url("../img//cursor-red.png") 16 16, auto;
+
 
 }
